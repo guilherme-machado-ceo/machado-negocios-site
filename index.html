@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessa-Machado: Negócios Com Serviços Linguísticos Globais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png" alt="Logo Lessa-Machado">
+                    <div class="logo-text">Lessa-Machado</div>
+                </div>
+                
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+                
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="#home" data-pt="Início" data-en="Home" data-es="Inicio">Início</a></li>
+                        <li><a href="quemsomos.html" data-pt="Quem Somos" data-en="About Us" data-es="Quiénes Somos">Quem Somos</a></li>
+                        <li><a href="servicos.html" data-pt="Serviços" data-en="Services" data-es="Servicios">Serviços</a></li>
+                        <li><a href="entreemcontato.html" data-pt="Contato" data-en="Contact" data-es="Contacto">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="language-selector">
+                    <button class="lang-btn active" onclick="changeLanguage('pt')" data-lang="pt">PT</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')" data-lang="en">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('es')" data-lang="es">ES</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero fade-in">
+                <h1>
+                    <span data-pt="Lessa-Machado Negócios & Cia" data-en="Lessa-Machado Business & Co" data-es="Lessa-Machado Negocios & Cía">Lessa-Machado Negócios & Cia</span><br>
+                    <span data-pt="Negócios com Serviços Linguísticos Globais" data-en="Global Linguistic Services Business" data-es="Negocios con Servicios Lingüísticos Globales">Negócios com Serviços Linguísticos Globais</span>
+                </h1>
+                
+                <h2 data-pt="Somos a Exceção de Algumas Regras" data-en="We Are the Exception to Some Rules" data-es="Somos la Excepción de Algunas Reglas">Somos a Exceção de Algumas Regras</h2>
+                
+                <h3>English Spoken - Si Parla Italiano - Se Habla Español - Man spricht Deutsch</h3>
+                
+                <h4 data-pt="São Paulo - Brasil" data-en="São Paulo - Brazil" data-es="São Paulo - Brasil">São Paulo - Brasil</h4>
+            </div>
+            
+            <div class="sections-grid">
+                <div class="section-card fade-in">
+                    <h3 data-pt="Nossa Missão" data-en="Our Mission" data-es="Nuestra Misión">Nossa Missão</h3>
+                    <p data-pt="Realizar toda a produção linguística e comunicacional de um negócio, em diferentes idiomas." 
+                       data-en="To handle all linguistic and communication production for businesses in different languages." 
+                       data-es="Realizar toda la producción lingüística y comunicacional de un negocio, en diferentes idiomas.">Realizar toda a produção linguística e comunicacional de um negócio, em diferentes idiomas.</p>
+                </div>
+                
+                <div class="section-card fade-in">
+                    <h3 data-pt="Nossa Visão" data-en="Our Vision" data-es="Nuestra Visión">Nossa Visão</h3>
+                    <p data-pt="Exercer a liderança em projetos internacionais, articulando parcerias entre governos, empresas, universidades e demais setores da sociedade global." 
+                       data-en="To exercise leadership in international projects, articulating partnerships between governments, companies, universities and other sectors of global society." 
+                       data-es="Ejercer el liderazgo en proyectos internacionales, articulando alianzas entre gobiernos, empresas, universidades y demás sectores de la sociedad global.">Exercer a liderança em projetos internacionais, articulando parcerias entre governos, empresas, universidades e demais setores da sociedade global.</p>
+                </div>
+                
+                <div class="section-card fade-in">
+                    <h3 data-pt="Nossos Valores" data-en="Our Values" data-es="Nuestros Valores">Nossos Valores</h3>
+                    <p data-pt="Excepcionalidade. Originalidade. Disruptividade." 
+                       data-en="Exceptionality. Originality. Disruptiveness." 
+                       data-es="Excepcionalidad. Originalidad. Disruptividad.">Excepcionalidade. Originalidade. Disruptividade.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p data-pt="© 2024 Lessa-Machado Negócios & Cia. Todos os direitos reservados." 
+                   data-en="© 2024 Lessa-Machado Business & Co. All rights reserved." 
+                   data-es="© 2024 Lessa-Machado Negocios & Cía. Todos los derechos reservados.">© 2024 Lessa-Machado Negócios & Cia. Todos os direitos reservados.</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/guilherme-machado-ceo" target="_blank">GitHub</a>
+                    <a href="https://www.facebook.com/profile.php?id=100090304800262" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/@lessamachado_negociosecia" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

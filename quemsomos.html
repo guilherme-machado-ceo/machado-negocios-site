@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-pt="Quem Somos - Lessa-Machado" data-en="About Us - Lessa-Machado" data-es="Quiénes Somos - Lessa-Machado">Quem Somos - Lessa-Machado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png" alt="Logo Lessa-Machado">
+                    <div class="logo-text">Lessa-Machado</div>
+                </div>
+                
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+                
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="index.html" data-pt="Início" data-en="Home" data-es="Inicio">Início</a></li>
+                        <li><a href="quemsomos.html" data-pt="Quem Somos" data-en="About Us" data-es="Quiénes Somos" class="active">Quem Somos</a></li>
+                        <li><a href="servicos.html" data-pt="Serviços" data-en="Services" data-es="Servicios">Serviços</a></li>
+                        <li><a href="entreemcontato.html" data-pt="Contato" data-en="Contact" data-es="Contacto">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="language-selector">
+                    <button class="lang-btn active" onclick="changeLanguage('pt')" data-lang="pt">PT</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')" data-lang="en">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('es')" data-lang="es">ES</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero fade-in">
+                <h1 data-pt="Quem Somos" data-en="About Us" data-es="Quiénes Somos">Quem Somos</h1>
+                <p data-pt="Conheça nossa história, nossa equipe e nossos valores que nos tornam únicos no mercado de serviços linguísticos." 
+                   data-en="Learn about our history, our team and our values that make us unique in the linguistic services market." 
+                   data-es="Conoce nuestra historia, nuestro equipo y nuestros valores que nos hacen únicos en el mercado de servicios lingüísticos.">Conheça nossa história, nossa equipe e nossos valores que nos tornam únicos no mercado de serviços linguísticos.</p>
+            </div>
+            
+            <div class="sections-grid">
+                <div class="section-card fade-in">
+                    <h3 data-pt="Nossa História" data-en="Our History" data-es="Nuestra Historia">Nossa História</h3>
+                    <p data-pt="Fundada em São Paulo, a Lessa-Machado é uma agência 100% virtual que nasceu da visão de criar pontes linguísticas e culturais entre empresas e mercados globais. Operando em modelo home office, oferecemos flexibilidade e agilidade sem comprometer a qualidade. Com anos de experiência em tradução, interpretação e consultoria linguística, construímos uma reputação sólida baseada na excelência e inovação." 
+                       data-en="Founded in São Paulo, Lessa-Machado is a 100% virtual agency born from the vision of creating linguistic and cultural bridges between companies and global markets. Operating in a home office model, we offer flexibility and agility without compromising quality. With years of experience in translation, interpretation and linguistic consulting, we have built a solid reputation based on excellence and innovation." 
+                       data-es="Fundada en São Paulo, Lessa-Machado es una agencia 100% virtual que nació de la visión de crear puentes lingüísticos y culturales entre empresas y mercados globales. Operando en modelo home office, ofrecemos flexibilidad y agilidad sin comprometer la calidad. Con años de experiencia en traducción, interpretación y consultoría lingüística, hemos construido una reputación sólida basada en la excelencia e innovación.">Fundada em São Paulo, a Lessa-Machado é uma agência 100% virtual que nasceu da visão de criar pontes linguísticas e culturais entre empresas e mercados globais. Operando em modelo home office, oferecemos flexibilidade e agilidade sem comprometer a qualidade. Com anos de experiência em tradução, interpretação e consultoria linguística, construímos uma reputação sólida baseada na excelência e inovação.</p>
+                </div>
+                
+                <div class="section-card fade-in">
+                    <h3 data-pt="Nossa Equipe" data-en="Our Team" data-es="Nuestro Equipo">Nossa Equipe</h3>
+                    <p data-pt="Contamos com uma equipe multidisciplinar de linguistas, tradutores, intérpretes e consultores especializados em diferentes áreas do conhecimento. Nossos profissionais são nativos ou possuem proficiência comprovada nos idiomas com os quais trabalham, garantindo autenticidade e precisão em cada projeto." 
+                       data-en="We have a multidisciplinary team of linguists, translators, interpreters and consultants specialized in different areas of knowledge. Our professionals are native speakers or have proven proficiency in the languages they work with, ensuring authenticity and precision in each project." 
+                       data-es="Contamos con un equipo multidisciplinario de lingüistas, traductores, intérpretes y consultores especializados en diferentes áreas del conocimiento. Nuestros profesionales son nativos o poseen competencia comprobada en los idiomas con los que trabajan, garantizando autenticidad y precisión en cada proyecto.">Contamos com uma equipe multidisciplinar de linguistas, tradutores, intérpretes e consultores especializados em diferentes áreas do conhecimento. Nossos profissionais são nativos ou possuem proficiência comprovada nos idiomas com os quais trabalham, garantindo autenticidade e precisão em cada projeto.</p>
+                </div>
+                
+                <div class="section-card fade-in">
+                    <h3 data-pt="Nosso Diferencial" data-en="Our Advantage" data-es="Nuestro Diferencial">Nosso Diferencial</h3>
+                    <p data-pt="Somos mais que uma empresa de tradução. Oferecemos soluções completas de comunicação intercultural, adaptando não apenas palavras, mas contextos, culturas e intenções. Nossa abordagem disruptiva nos permite entregar resultados que vão além das expectativas dos nossos clientes." 
+                       data-en="We are more than a translation company. We offer complete intercultural communication solutions, adapting not just words, but contexts, cultures and intentions. Our disruptive approach allows us to deliver results that exceed our clients' expectations." 
+                       data-es="Somos más que una empresa de traducción. Ofrecemos soluciones completas de comunicación intercultural, adaptando no solo palabras, sino contextos, culturas e intenciones. Nuestro enfoque disruptivo nos permite entregar resultados que superan las expectativas de nuestros clientes.">Somos mais que uma empresa de tradução. Oferecemos soluções completas de comunicação intercultural, adaptando não apenas palavras, mas contextos, culturas e intenções. Nossa abordagem disruptiva nos permite entregar resultados que vão além das expectativas dos nossos clientes.</p>
+                </div>
+                
+                <div class="section-card fade-in">
+                    <h3 data-pt="Certificações e Parcerias" data-en="Certifications and Partnerships" data-es="Certificaciones y Alianzas">Certificações e Parcerias</h3>
+                    <p data-pt="Mantemos parcerias estratégicas com universidades, organizações governamentais e empresas multinacionais. Nossos profissionais possuem certificações internacionais e participam regularmente de programas de atualização e especialização." 
+                       data-en="We maintain strategic partnerships with universities, government organizations and multinational companies. Our professionals have international certifications and regularly participate in update and specialization programs." 
+                       data-es="Mantenemos alianzas estratégicas con universidades, organizaciones gubernamentales y empresas multinacionales. Nuestros profesionales poseen certificaciones internacionales y participan regularmente en programas de actualización y especialización.">Mantemos parcerias estratégicas com universidades, organizações governamentais e empresas multinacionais. Nossos profissionais possuem certificações internacionais e participam regularmente de programas de atualização e especialização.</p>
+                </div>
+                
+                <div class="section-card fade-in">
+                    <h3 data-pt="Compromisso com a Qualidade" data-en="Commitment to Quality" data-es="Compromiso con la Calidad">Compromisso com a Qualidade</h3>
+                    <p data-pt="Cada projeto passa por rigorosos processos de controle de qualidade, incluindo revisão por pares, validação cultural e testes de usabilidade. Utilizamos as mais modernas ferramentas de tradução assistida por computador, sempre com supervisão humana especializada." 
+                       data-en="Each project goes through rigorous quality control processes, including peer review, cultural validation and usability testing. We use the most modern computer-assisted translation tools, always with specialized human supervision." 
+                       data-es="Cada proyecto pasa por rigurosos procesos de control de calidad, incluyendo revisión por pares, validación cultural y pruebas de usabilidad. Utilizamos las más modernas herramientas de traducción asistida por computadora, siempre con supervisión humana especializada.">Cada projeto passa por rigorosos processos de controle de qualidade, incluindo revisão por pares, validação cultural e testes de usabilidade. Utilizamos as mais modernas ferramentas de tradução assistida por computador, sempre com supervisão humana especializada.</p>
+                </div>
+                
+                <div class="section-card fade-in">
+                    <h3 data-pt="Responsabilidade Social" data-en="Social Responsibility" data-es="Responsabilidad Social">Responsabilidade Social</h3>
+                    <p data-pt="Acreditamos no poder da comunicação para transformar sociedades. Por isso, desenvolvemos projetos sociais que promovem a inclusão linguística e cultural, oferecendo serviços pro bono para organizações sem fins lucrativos e iniciativas educacionais." 
+                       data-en="We believe in the power of communication to transform societies. Therefore, we develop social projects that promote linguistic and cultural inclusion, offering pro bono services to non-profit organizations and educational initiatives." 
+                       data-es="Creemos en el poder de la comunicación para transformar sociedades. Por eso, desarrollamos proyectos sociales que promueven la inclusión lingüística y cultural, ofreciendo servicios pro bono para organizaciones sin fines de lucro e iniciativas educativas.">Acreditamos no poder da comunicação para transformar sociedades. Por isso, desenvolvemos projetos sociais que promovem a inclusão linguística e cultural, oferecendo serviços pro bono para organizações sem fins lucrativos e iniciativas educacionais.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p data-pt="© 2024 Lessa-Machado Negócios & Cia. Todos os direitos reservados." 
+                   data-en="© 2024 Lessa-Machado Business & Co. All rights reserved." 
+                   data-es="© 2024 Lessa-Machado Negocios & Cía. Todos los derechos reservados.">© 2024 Lessa-Machado Negócios & Cia. Todos os direitos reservados.</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/guilherme-machado-ceo" target="_blank">GitHub</a>
+                    <a href="https://www.facebook.com/profile.php?id=100090304800262" target="_blank">Facebook</a>
+                    <a href="https://www.youtube.com/@lessamachado_negociosecia" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
