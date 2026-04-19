@@ -1,147 +1,133 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-pt="Serviços - Lessa-Machado" data-en="Services - Lessa-Machado" data-es="Servicios - Lessa-Machado">Serviços - Lessa-Machado</title>
+    <meta name="description" content="Serviços da Lessa-Machado: tradução, interpretação, redação corporativa, consultoria em comunicação e localização de conteúdo.">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark">
+    <title
+        data-pt="Serviços — Lessa-Machado"
+        data-en="Services — Lessa-Machado"
+        data-es="Servicios — Lessa-Machado"
+    >Serviços — Lessa-Machado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png" alt="Logo Lessa-Machado">
+                    <img src="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png" alt="Logo Lessa-Machado" width="40" height="40">
                     <div class="logo-text">Lessa-Machado</div>
                 </div>
-                
-                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-                
-                <nav id="nav-menu">
+
+                <button class="mobile-menu-toggle" type="button"
+                    onclick="toggleMobileMenu()"
+                    aria-controls="nav-menu"
+                    aria-expanded="false"
+                    aria-label="Menu de navegação">☰</button>
+
+                <nav id="nav-menu" aria-label="Principal">
                     <ul>
                         <li><a href="index.html" data-pt="Início" data-en="Home" data-es="Inicio">Início</a></li>
                         <li><a href="quemsomos.html" data-pt="Quem Somos" data-en="About Us" data-es="Quiénes Somos">Quem Somos</a></li>
-                        <li><a href="servicos.html" data-pt="Serviços" data-en="Services" data-es="Servicios" class="active">Serviços</a></li>
+                        <li><a href="servicos.html" data-pt="Serviços" data-en="Services" data-es="Servicios">Serviços</a></li>
                         <li><a href="entreemcontato.html" data-pt="Contato" data-en="Contact" data-es="Contacto">Contato</a></li>
                     </ul>
                 </nav>
-                
-                <div class="language-selector">
-                    <button class="lang-btn active" onclick="changeLanguage('pt')" data-lang="pt">PT</button>
-                    <button class="lang-btn" onclick="changeLanguage('en')" data-lang="en">EN</button>
-                    <button class="lang-btn" onclick="changeLanguage('es')" data-lang="es">ES</button>
+
+                <div class="language-selector" aria-label="Selecionar idioma">
+                    <button class="lang-btn active" onclick="changeLanguage('pt')" data-lang="pt" aria-label="Português">PT</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')" data-lang="en" aria-label="English">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('es')" data-lang="es" aria-label="Español">ES</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <div class="container">
+
             <div class="hero fade-in">
-                <h1 data-pt="Nossos Serviços" data-en="Our Services" data-es="Nuestros Servicios">Nossos Serviços</h1>
-                <p data-pt="Oferecemos soluções completas em serviços linguísticos para empresas que buscam expandir seus negócios globalmente." 
-                   data-en="We offer complete solutions in linguistic services for companies looking to expand their business globally." 
-                   data-es="Ofrecemos soluciones completas en servicios lingüísticos para empresas que buscan expandir sus negocios globalmente.">Oferecemos soluções completas em serviços linguísticos para empresas que buscam expandir seus negócios globalmente.</p>
+                <h1>
+                    <span data-pt="Nossos Serviços" data-en="Our Services" data-es="Nuestros Servicios">Nossos Serviços</span>
+                </h1>
+                <h2 data-pt="Soluções linguísticas para negócios com alcance global."
+                    data-en="Linguistic solutions for globally reaching businesses."
+                    data-es="Soluciones lingüísticas para negocios con alcance global.">Soluções linguísticas para negócios com alcance global.</h2>
             </div>
-            
-            <div class="sections-grid">
-                <div class="section-card fade-in">
-                    <h3 data-pt="Tradução Técnica" data-en="Technical Translation" data-es="Traducción Técnica">Tradução Técnica</h3>
-                    <p data-pt="Tradução especializada de documentos técnicos, manuais, especificações e documentação industrial. Nossos tradutores possuem expertise em áreas como engenharia, medicina, direito, tecnologia da informação e ciências." 
-                       data-en="Specialized translation of technical documents, manuals, specifications and industrial documentation. Our translators have expertise in areas such as engineering, medicine, law, information technology and sciences." 
-                       data-es="Traducción especializada de documentos técnicos, manuales, especificaciones y documentación industrial. Nuestros traductores poseen experiencia en áreas como ingeniería, medicina, derecho, tecnología de la información y ciencias.">Tradução especializada de documentos técnicos, manuais, especificações e documentação industrial. Nossos tradutores possuem expertise em áreas como engenharia, medicina, direito, tecnologia da informação e ciências.</p>
+
+            <div class="services-grid">
+
+                <div class="service-item fade-in">
+                    <span class="service-icon" aria-hidden="true">🌐</span>
+                    <h3 data-pt="Tradução Especializada" data-en="Specialized Translation" data-es="Traducción Especializada">Tradução Especializada</h3>
+                    <p data-pt="Tradução técnica, jurídica, financeira e corporativa com fidelidade conceitual. Documentos, contratos, relatórios e materiais institucionais nos idiomas PT, EN, ES, IT e DE."
+                       data-en="Technical, legal, financial, and corporate translation with conceptual fidelity. Documents, contracts, reports, and institutional materials in PT, EN, ES, IT, and DE."
+                       data-es="Traducción técnica, jurídica, financiera y corporativa con fidelidad conceptual. Documentos, contratos, informes y materiales institucionales en PT, EN, ES, IT y DE.">Tradução técnica, jurídica, financeira e corporativa com fidelidade conceitual. Documentos, contratos, relatórios e materiais institucionais nos idiomas PT, EN, ES, IT e DE.</p>
                 </div>
-                
-                <div class="section-card fade-in">
-                    <h3 data-pt="Interpretação Simultânea" data-en="Simultaneous Interpretation" data-es="Interpretación Simultánea">Interpretação Simultânea</h3>
-                    <p data-pt="Serviços de interpretação para conferências, reuniões executivas, eventos corporativos e negociações internacionais. Oferecemos interpretação simultânea, consecutiva e de acompanhamento com equipamentos de última geração." 
-                       data-en="Interpretation services for conferences, executive meetings, corporate events and international negotiations. We offer simultaneous, consecutive and escort interpretation with state-of-the-art equipment." 
-                       data-es="Servicios de interpretación para conferencias, reuniones ejecutivas, eventos corporativos y negociaciones internacionales. Ofrecemos interpretación simultánea, consecutiva y de acompañamiento con equipos de última generación.">Serviços de interpretação para conferências, reuniões executivas, eventos corporativos e negociações internacionais. Oferecemos interpretação simultânea, consecutiva e de acompanhamento com equipamentos de última geração.</p>
+
+                <div class="service-item fade-in">
+                    <span class="service-icon" aria-hidden="true">🎤</span>
+                    <h3 data-pt="Interpretação Simultânea e Consecutiva" data-en="Simultaneous & Consecutive Interpretation" data-es="Interpretación Simultánea y Consecutiva">Interpretação Simultânea e Consecutiva</h3>
+                    <p data-pt="Interpretação para eventos, conferências, negociações e reuniões de alto nível. Presencial ou remota, com equipamentos e equipe certificados."
+                       data-en="Interpretation for events, conferences, negotiations, and high-level meetings. On-site or remote, with certified equipment and team."
+                       data-es="Interpretación para eventos, conferencias, negociaciones y reuniones de alto nivel. Presencial o remota, con equipos y equipo certificados.">Interpretação para eventos, conferências, negociações e reuniões de alto nível. Presencial ou remota, com equipamentos e equipe certificados.</p>
                 </div>
-                
-                <div class="section-card fade-in">
-                    <h3 data-pt="Localização de Software" data-en="Software Localization" data-es="Localización de Software">Localização de Software</h3>
-                    <p data-pt="Adaptação completa de softwares, aplicativos e plataformas digitais para diferentes mercados. Incluímos tradução de interface, adaptação cultural, testes funcionais e otimização para SEO local." 
-                       data-en="Complete adaptation of software, applications and digital platforms for different markets. We include interface translation, cultural adaptation, functional testing and local SEO optimization." 
-                       data-es="Adaptación completa de software, aplicaciones y plataformas digitales para diferentes mercados. Incluimos traducción de interfaz, adaptación cultural, pruebas funcionales y optimización para SEO local.">Adaptação completa de softwares, aplicativos e plataformas digitais para diferentes mercados. Incluímos tradução de interface, adaptação cultural, testes funcionais e otimização para SEO local.</p>
+
+                <div class="service-item fade-in">
+                    <span class="service-icon" aria-hidden="true">✍️</span>
+                    <h3 data-pt="Redação Corporativa" data-en="Corporate Writing" data-es="Redacción Corporativa">Redação Corporativa</h3>
+                    <p data-pt="Produção de conteúdo estratégico: relatórios, propostas, apresentações, comunicados internos e externos, discursos e materiais de treinamento."
+                       data-en="Strategic content production: reports, proposals, presentations, internal and external communications, speeches, and training materials."
+                       data-es="Producción de contenido estratégico: informes, propuestas, presentaciones, comunicados internos y externos, discursos y materiales de capacitación.">Produção de conteúdo estratégico: relatórios, propostas, apresentações, comunicados internos e externos, discursos e materiais de treinamento.</p>
                 </div>
-                
-                <div class="section-card fade-in">
-                    <h3 data-pt="Consultoria Linguística" data-en="Linguistic Consulting" data-es="Consultoría Lingüística">Consultoria Linguística</h3>
-                    <p data-pt="Assessoria estratégica para empresas que desejam expandir para mercados internacionais. Oferecemos análise de viabilidade linguística, estratégias de comunicação intercultural e treinamento de equipes." 
-                       data-en="Strategic advisory for companies wishing to expand to international markets. We offer linguistic feasibility analysis, intercultural communication strategies and team training." 
-                       data-es="Asesoría estratégica para empresas que desean expandirse a mercados internacionales. Ofrecemos análisis de viabilidad lingüística, estrategias de comunicación intercultural y entrenamiento de equipos.">Assessoria estratégica para empresas que desejam expandir para mercados internacionais. Oferecemos análise de viabilidade linguística, estratégias de comunicação intercultural e treinamento de equipes.</p>
+
+                <div class="service-item fade-in">
+                    <span class="service-icon" aria-hidden="true">🔄</span>
+                    <h3 data-pt="Localização de Conteúdo" data-en="Content Localization" data-es="Localización de Contenido">Localização de Conteúdo</h3>
+                    <p data-pt="Adaptação cultural e linguística de sites, apps, campanhas e produtos para mercados específicos. Além da tradução: a mensagem certa para o público certo."
+                       data-en="Cultural and linguistic adaptation of websites, apps, campaigns, and products for specific markets. Beyond translation: the right message for the right audience."
+                       data-es="Adaptación cultural y lingüística de sitios web, apps, campañas y productos para mercados específicos. Más allá de la traducción: el mensaje correcto para el público correcto.">Adaptação cultural e linguística de sites, apps, campanhas e produtos para mercados específicos. Além da tradução: a mensagem certa para o público certo.</p>
                 </div>
-                
-                <div class="section-card fade-in">
-                    <h3 data-pt="Tradução Juramentada" data-en="Sworn Translation" data-es="Traducción Jurada">Tradução Juramentada</h3>
-                    <p data-pt="Tradução oficial de documentos para fins legais, acadêmicos e governamentais. Nossos tradutores juramentados são credenciados pelos órgãos competentes e garantem a validade legal dos documentos traduzidos." 
-                       data-en="Official translation of documents for legal, academic and governmental purposes. Our sworn translators are accredited by competent bodies and guarantee the legal validity of translated documents." 
-                       data-es="Traducción oficial de documentos para fines legales, académicos y gubernamentales. Nuestros traductores jurados están acreditados por los órganos competentes y garantizan la validez legal de los documentos traducidos.">Tradução oficial de documentos para fins legais, acadêmicos e governamentais. Nossos tradutores juramentados são credenciados pelos órgãos competentes e garantem a validade legal dos documentos traduzidos.</p>
+
+                <div class="service-item fade-in">
+                    <span class="service-icon" aria-hidden="true">📋</span>
+                    <h3 data-pt="Consultoria em Comunicação Internacional" data-en="International Communication Consulting" data-es="Consultoría en Comunicación Internacional">Consultoria em Comunicação Internacional</h3>
+                    <p data-pt="Diagnóstico e estratégia para empresas que buscam expandir sua presença internacional. Planejamento comunicacional, posicionamento de marca e gestão de crises multilíngue."
+                       data-en="Diagnosis and strategy for companies seeking to expand their international presence. Communication planning, brand positioning, and multilingual crisis management."
+                       data-es="Diagnóstico y estrategia para empresas que buscan expandir su presencia internacional. Planificación comunicacional, posicionamiento de marca y gestión de crisis multilingüe.">Diagnóstico e estratégia para empresas que buscam expandir sua presença internacional. Planejamento comunicacional, posicionamento de marca e gestão de crises multilíngue.</p>
                 </div>
-                
-                <div class="section-card fade-in">
-                    <h3 data-pt="Marketing Multilíngue" data-en="Multilingual Marketing" data-es="Marketing Multilingüe">Marketing Multilíngue</h3>
-                    <p data-pt="Criação e adaptação de campanhas publicitárias para diferentes culturas e mercados. Desenvolvemos estratégias de marketing que respeitam as nuances culturais e maximizam o impacto da comunicação." 
-                       data-en="Creation and adaptation of advertising campaigns for different cultures and markets. We develop marketing strategies that respect cultural nuances and maximize communication impact." 
-                       data-es="Creación y adaptación de campañas publicitarias para diferentes culturas y mercados. Desarrollamos estrategias de marketing que respetan los matices culturales y maximizan el impacto de la comunicación.">Criação e adaptação de campanhas publicitárias para diferentes culturas e mercados. Desenvolvemos estratégias de marketing que respeitam as nuances culturais e maximizam o impacto da comunicação.</p>
+
+                <div class="service-item fade-in">
+                    <span class="service-icon" aria-hidden="true">📚</span>
+                    <h3 data-pt="Treinamento Linguístico Corporativo" data-en="Corporate Language Training" data-es="Capacitación Lingüística Corporativa">Treinamento Linguístico Corporativo</h3>
+                    <p data-pt="Programas customizados de língua para equipes executivas e operacionais. Foco em comunicação de negócios, negociação e apresentações em inglês, espanhol ou português."
+                       data-en="Customized language programs for executive and operational teams. Focus on business communication, negotiation, and presentations in English, Spanish, or Portuguese."
+                       data-es="Programas personalizados de idiomas para equipos ejecutivos y operativos. Enfoque en comunicación de negocios, negociación y presentaciones en inglés, español o portugués.">Programas customizados de língua para equipes executivas e operacionais. Foco em comunicação de negócios, negociação e apresentações em inglês, espanhol ou português.</p>
                 </div>
-                
-                <div class="section-card fade-in">
-                    <h3 data-pt="Treinamento Corporativo" data-en="Corporate Training" data-es="Entrenamiento Corporativo">Treinamento Corporativo</h3>
-                    <p data-pt="Programas de capacitação em idiomas e comunicação intercultural para equipes empresariais. Oferecemos cursos presenciais e online, workshops especializados e coaching linguístico personalizado." 
-                       data-en="Language and intercultural communication training programs for business teams. We offer face-to-face and online courses, specialized workshops and personalized linguistic coaching." 
-                       data-es="Programas de capacitación en idiomas y comunicación intercultural para equipos empresariales. Ofrecemos cursos presenciales y en línea, talleres especializados y coaching lingüístico personalizado.">Programas de capacitação em idiomas e comunicação intercultural para equipes empresariais. Oferecemos cursos presenciais e online, workshops especializados e coaching linguístico personalizado.</p>
-                </div>
-                
-                <div class="section-card fade-in">
-                    <h3 data-pt="Gestão de Projetos Multilíngues" data-en="Multilingual Project Management" data-es="Gestión de Proyectos Multilingües">Gestão de Projetos Multilíngues</h3>
-                    <p data-pt="Coordenação completa de projetos complexos envolvendo múltiplos idiomas e culturas. Utilizamos metodologias ágeis e ferramentas de gestão avançadas para garantir entregas pontuais e qualidade excepcional." 
-                       data-en="Complete coordination of complex projects involving multiple languages and cultures. We use agile methodologies and advanced management tools to ensure timely deliveries and exceptional quality." 
-                       data-es="Coordinación completa de proyectos complejos que involucran múltiples idiomas y culturas. Utilizamos metodologías ágiles y herramientas de gestión avanzadas para garantizar entregas puntuales y calidad excepcional.">Coordenação completa de projetos complexos envolvendo múltiplos idiomas e culturas. Utilizamos metodologias ágeis e ferramentas de gestão avançadas para garantir entregas pontuais e qualidade excepcional.</p>
-                </div>
-                
-                <div class="section-card fade-in">
-                    <h3 data-pt="Suporte 24/7" data-en="24/7 Support" data-es="Soporte 24/7">Suporte 24/7</h3>
-                    <p data-pt="Atendimento contínuo para projetos urgentes e clientes internacionais. Nossa equipe global garante suporte em diferentes fusos horários, oferecendo soluções rápidas e eficientes a qualquer momento." 
-                       data-en="Continuous service for urgent projects and international clients. Our global team ensures support across different time zones, offering quick and efficient solutions at any time." 
-                       data-es="Atención continua para proyectos urgentes y clientes internacionales. Nuestro equipo global garantiza soporte en diferentes zonas horarias, ofreciendo soluciones rápidas y eficientes en cualquier momento.">Atendimento contínuo para projetos urgentes e clientes internacionais. Nossa equipe global garante suporte em diferentes fusos horários, oferecendo soluções rápidas e eficientes a qualquer momento.</p>
-                </div>
+
             </div>
-            
-            <div class="hero mt-2">
-                <h2 data-pt="Por que escolher a Lessa-Machado?" data-en="Why choose Lessa-Machado?" data-es="¿Por qué elegir Lessa-Machado?">Por que escolher a Lessa-Machado?</h2>
-                <div class="sections-grid">
-                    <div class="section-card">
-                        <h4 data-pt="✓ Qualidade Certificada" data-en="✓ Certified Quality" data-es="✓ Calidad Certificada">✓ Qualidade Certificada</h4>
-                        <p data-pt="ISO 9001 e certificações internacionais" data-en="ISO 9001 and international certifications" data-es="ISO 9001 y certificaciones internacionales">ISO 9001 e certificações internacionais</p>
-                    </div>
-                    <div class="section-card">
-                        <h4 data-pt="✓ Equipe Especializada" data-en="✓ Specialized Team" data-es="✓ Equipo Especializado">✓ Equipe Especializada</h4>
-                        <p data-pt="Profissionais nativos e especializados" data-en="Native and specialized professionals" data-es="Profesionales nativos y especializados">Profissionais nativos e especializados</p>
-                    </div>
-                    <div class="section-card">
-                        <h4 data-pt="✓ Tecnologia Avançada" data-en="✓ Advanced Technology" data-es="✓ Tecnología Avanzada">✓ Tecnologia Avançada</h4>
-                        <p data-pt="Ferramentas CAT e IA de última geração" data-en="Latest generation CAT tools and AI" data-es="Herramientas CAT e IA de última generación">Ferramentas CAT e IA de última geração</p>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p data-pt="© 2024 Lessa-Machado Negócios & Cia. Todos os direitos reservados." 
-                   data-en="© 2024 Lessa-Machado Business & Co. All rights reserved." 
-                   data-es="© 2024 Lessa-Machado Negocios & Cía. Todos los derechos reservados.">© 2024 Lessa-Machado Negócios & Cia. Todos os direitos reservados.</p>
-                
+                <p data-pt="© 2026 Lessa-Machado Negócios & Cia. Todos os direitos reservados."
+                   data-en="© 2026 Lessa-Machado Business & Co. All rights reserved."
+                   data-es="© 2026 Lessa-Machado Negocios & Cía. Todos los derechos reservados.">© 2026 Lessa-Machado Negócios & Cia. Todos os direitos reservados.</p>
                 <div class="social-links">
-                    <a href="https://github.com/guilherme-machado-ceo" target="_blank">GitHub</a>
-                    <a href="https://www.facebook.com/profile.php?id=100090304800262" target="_blank">Facebook</a>
-                    <a href="https://www.youtube.com/@lessamachado_negociosecia" target="_blank">YouTube</a>
+                    <a href="https://github.com/guilherme-machado-ceo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.facebook.com/profile.php?id=100090304800262" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.youtube.com/@lessamachado_negociosecia" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    <a href="https://www.linkedin.com/in/lessa-machado-neg%C3%B3cios-e-cia/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </div>

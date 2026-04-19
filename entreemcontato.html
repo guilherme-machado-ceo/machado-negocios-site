@@ -1,170 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-pt="Contato - Lessa-Machado" data-en="Contact - Lessa-Machado" data-es="Contacto - Lessa-Machado">Contato - Lessa-Machado</title>
+    <meta name="description" content="Entre em contato com a Lessa-Machado Negócios & Cia para serviços linguísticos, consultoria e parcerias internacionais.">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark">
+    <title
+        data-pt="Contato — Lessa-Machado"
+        data-en="Contact — Lessa-Machado"
+        data-es="Contacto — Lessa-Machado"
+    >Contato — Lessa-Machado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png" alt="Logo Lessa-Machado">
+                    <img src="Black_and_White_Monochrome_Tech_Logo-removebg-preview.png" alt="Logo Lessa-Machado" width="40" height="40">
                     <div class="logo-text">Lessa-Machado</div>
                 </div>
-                
-                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-                
-                <nav id="nav-menu">
+
+                <button class="mobile-menu-toggle" type="button"
+                    onclick="toggleMobileMenu()"
+                    aria-controls="nav-menu"
+                    aria-expanded="false"
+                    aria-label="Menu de navegação">☰</button>
+
+                <nav id="nav-menu" aria-label="Principal">
                     <ul>
                         <li><a href="index.html" data-pt="Início" data-en="Home" data-es="Inicio">Início</a></li>
                         <li><a href="quemsomos.html" data-pt="Quem Somos" data-en="About Us" data-es="Quiénes Somos">Quem Somos</a></li>
                         <li><a href="servicos.html" data-pt="Serviços" data-en="Services" data-es="Servicios">Serviços</a></li>
-                        <li><a href="entreemcontato.html" data-pt="Contato" data-en="Contact" data-es="Contacto" class="active">Contato</a></li>
+                        <li><a href="entreemcontato.html" data-pt="Contato" data-en="Contact" data-es="Contacto">Contato</a></li>
                     </ul>
                 </nav>
-                
-                <div class="language-selector">
-                    <button class="lang-btn active" onclick="changeLanguage('pt')" data-lang="pt">PT</button>
-                    <button class="lang-btn" onclick="changeLanguage('en')" data-lang="en">EN</button>
-                    <button class="lang-btn" onclick="changeLanguage('es')" data-lang="es">ES</button>
+
+                <div class="language-selector" aria-label="Selecionar idioma">
+                    <button class="lang-btn active" onclick="changeLanguage('pt')" data-lang="pt" aria-label="Português">PT</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')" data-lang="en" aria-label="English">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('es')" data-lang="es" aria-label="Español">ES</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <div class="container">
-            <div class="hero fade-in">
-                <h1 data-pt="Entre em Contato" data-en="Get in Touch" data-es="Póngase en Contacto">Entre em Contato</h1>
-                <p data-pt="Estamos prontos para ajudar sua empresa a expandir globalmente. Entre em contato conosco para discutir suas necessidades linguísticas." 
-                   data-en="We are ready to help your company expand globally. Contact us to discuss your linguistic needs." 
-                   data-es="Estamos listos para ayudar a su empresa a expandirse globalmente. Contáctenos para discutir sus necesidades lingüísticas.">Estamos prontos para ajudar sua empresa a expandir globalmente. Entre em contato conosco para discutir suas necessidades linguísticas.</p>
-            </div>
-            
-            <div class="contact-container">
-                <div class="contact-info fade-in">
-                    <h2 data-pt="Informações de Contato" data-en="Contact Information" data-es="Información de Contacto">Informações de Contato</h2>
-                    
-                    <div class="contact-item">
-                        <h3 data-pt="📧 Email" data-en="📧 Email" data-es="📧 Email">📧 Email</h3>
-                        <p>lessamachadonegociosecia@gmail.com</p>
-                        <p>comercial@lessamachado.com</p>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <h3 data-pt="📱 Telefone" data-en="📱 Phone" data-es="📱 Teléfono">📱 Telefone</h3>
-                        <p>+55 (11) 99455-5772</p>
-                    </div>
-                    
 
-                    <div class="contact-item">
-                        <h3 data-pt="🕒 Horário de Atendimento" data-en="🕒 Business Hours" data-es="🕒 Horario de Atención">🕒 Horário de Atendimento</h3>
-                        <p data-pt="Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h<br>Domingo: Fechado" 
-                           data-en="Monday to Friday: 8am to 6pm<br>Saturday: 9am to 1pm<br>Sunday: Closed" 
-                           data-es="Lunes a Viernes: 8h a 18h<br>Sábado: 9h a 13h<br>Domingo: Cerrado">Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h<br>Domingo: Fechado</p>
+            <div class="hero fade-in">
+                <h1>
+                    <span data-pt="Entre em Contato" data-en="Get in Touch" data-es="Póngase en Contacto">Entre em Contato</span>
+                </h1>
+                <h2 data-pt="Vamos conversar sobre o seu próximo projeto."
+                    data-en="Let's talk about your next project."
+                    data-es="Hablemos sobre su próximo proyecto.">Vamos conversar sobre o seu próximo projeto.</h2>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Informações de contato -->
+                <div class="contact-info">
+
+                    <div class="contact-item fade-in">
+                        <h3 data-pt="📍 Localização" data-en="📍 Location" data-es="📍 Ubicación">📍 Localização</h3>
+                        <p data-pt="Rio de Janeiro, Brasil" data-en="Rio de Janeiro, Brazil" data-es="Río de Janeiro, Brasil">Rio de Janeiro, Brasil</p>
+                        <p data-pt="Atendimento presencial e remoto" data-en="On-site and remote service" data-es="Servicio presencial y remoto">Atendimento presencial e remoto</p>
                     </div>
-                    
-                    <div class="contact-item">
+
+                    <div class="contact-item fade-in">
+                        <h3 data-pt="📧 E-mail" data-en="📧 Email" data-es="📧 Correo">📧 E-mail</h3>
+                        <a href="mailto:contato@lessamachado.com.br">contato@lessamachado.com.br</a>
+                    </div>
+
+                    <div class="contact-item fade-in">
                         <h3 data-pt="🌐 Redes Sociais" data-en="🌐 Social Media" data-es="🌐 Redes Sociales">🌐 Redes Sociais</h3>
                         <div class="social-links">
-                            <a href="https://github.com/guilherme-machado-ceo" target="_blank">GitHub</a>
-                            <a href="https://www.facebook.com/profile.php?id=100090304800262" target="_blank">Facebook</a>
-                            <a href="https://www.youtube.com/@lessamachado_negociosecia" target="_blank">YouTube</a>
-                            <a href="https://www.linkedin.com/in/lessa-machado-neg%C3%B3cios-e-cia/" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/guilherme-machado-ceo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.facebook.com/profile.php?id=100090304800262" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            <a href="https://www.youtube.com/@lessamachado_negociosecia" target="_blank" rel="noopener noreferrer">YouTube</a>
+                            <a href="https://www.linkedin.com/in/lessa-machado-neg%C3%B3cios-e-cia/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </div>
                     </div>
+
+                    <div class="contact-item fade-in">
+                        <h3 data-pt="🕐 Horário de Atendimento" data-en="🕐 Business Hours" data-es="🕐 Horario de Atención">🕐 Horário de Atendimento</h3>
+                        <p data-pt="Segunda a Sexta: 9h–18h (BRT)" data-en="Monday to Friday: 9am–6pm (BRT)" data-es="Lunes a Viernes: 9h–18h (BRT)">Segunda a Sexta: 9h–18h (BRT)</p>
+                    </div>
+
                 </div>
-                
-                <div class="contact-form fade-in">
-                    <h2 data-pt="Envie uma Mensagem" data-en="Send a Message" data-es="Enviar un Mensaje">Envie uma Mensagem</h2>
-                    
-                    <form id="contactForm" onsubmit="submitForm(event)">
+
+                <!-- Formulário -->
+                <div class="contact-form-wrap fade-in">
+                    <h3 data-pt="Envie uma Mensagem" data-en="Send a Message" data-es="Envíe un Mensaje">Envie uma Mensagem</h3>
+
+                    <form id="contact-form" onsubmit="submitForm(event)" novalidate>
                         <div class="form-group">
-                            <label for="name" data-pt="Nome Completo" data-en="Full Name" data-es="Nombre Completo">Nome Completo</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="contact-name"
+                                data-pt="Nome *" data-en="Name *" data-es="Nombre *">Nome *</label>
+                            <input type="text" id="contact-name" name="name"
+                                placeholder="Seu nome completo"
+                                autocomplete="name" required>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="email" data-pt="Email" data-en="Email" data-es="Email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="contact-email"
+                                data-pt="E-mail *" data-en="Email *" data-es="Correo *">E-mail *</label>
+                            <input type="email" id="contact-email" name="email"
+                                placeholder="seu@email.com"
+                                autocomplete="email" required>
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="phone" data-pt="Telefone" data-en="Phone" data-es="Teléfono">Telefone</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label for="contact-subject"
+                                data-pt="Assunto" data-en="Subject" data-es="Asunto">Assunto</label>
+                            <input type="text" id="contact-subject" name="subject"
+                                placeholder="Assunto da mensagem">
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="company" data-pt="Empresa" data-en="Company" data-es="Empresa">Empresa</label>
-                            <input type="text" id="company" name="company">
+                            <label for="contact-message"
+                                data-pt="Mensagem *" data-en="Message *" data-es="Mensaje *">Mensagem *</label>
+                            <textarea id="contact-message" name="message"
+                                placeholder="Como podemos ajudá-lo?" required></textarea>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="service" data-pt="Serviço de Interesse" data-en="Service of Interest" data-es="Servicio de Interés">Serviço de Interesse</label>
-                            <select id="service" name="service">
-                                <option value="" data-pt="Selecione um serviço" data-en="Select a service" data-es="Seleccione un servicio">Selecione um serviço</option>
-                                <option value="traducao-tecnica" data-pt="Tradução Técnica" data-en="Technical Translation" data-es="Traducción Técnica">Tradução Técnica</option>
-                                <option value="interpretacao" data-pt="Interpretação Simultânea" data-en="Simultaneous Interpretation" data-es="Interpretación Simultánea">Interpretação Simultânea</option>
-                                <option value="localizacao" data-pt="Localização de Software" data-en="Software Localization" data-es="Localización de Software">Localização de Software</option>
-                                <option value="consultoria" data-pt="Consultoria Linguística" data-en="Linguistic Consulting" data-es="Consultoría Lingüística">Consultoria Linguística</option>
-                                <option value="juramentada" data-pt="Tradução Juramentada" data-en="Sworn Translation" data-es="Traducción Jurada">Tradução Juramentada</option>
-                                <option value="marketing" data-pt="Marketing Multilíngue" data-en="Multilingual Marketing" data-es="Marketing Multilingüe">Marketing Multilíngue</option>
-                                <option value="treinamento" data-pt="Treinamento Corporativo" data-en="Corporate Training" data-es="Entrenamiento Corporativo">Treinamento Corporativo</option>
-                                <option value="gestao" data-pt="Gestão de Projetos" data-en="Project Management" data-es="Gestión de Proyectos">Gestão de Projetos</option>
-                                <option value="outros" data-pt="Outros" data-en="Others" data-es="Otros">Outros</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" data-pt="Mensagem" data-en="Message" data-es="Mensaje">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" required data-pt="Descreva seu projeto ou necessidade..." data-en="Describe your project or need..." data-es="Describa su proyecto o necesidad..." placeholder="Descreva seu projeto ou necessidade..."></textarea>
-                        </div>
-                        
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            <label for="privacy" data-pt="Concordo com a política de privacidade e autorizo o uso dos meus dados para contato." data-en="I agree with the privacy policy and authorize the use of my data for contact." data-es="Acepto la política de privacidad y autorizo el uso de mis datos para contacto.">Concordo com a política de privacidade e autorizo o uso dos meus dados para contato.</label>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn" data-pt="Enviar Mensagem" data-en="Send Message" data-es="Enviar Mensaje">Enviar Mensagem</button>
+
+                        <button type="submit" class="btn-submit"
+                            data-pt="Enviar Mensagem"
+                            data-en="Send Message"
+                            data-es="Enviar Mensaje">Enviar Mensagem</button>
                     </form>
-                    
-                    <div id="form-success" class="form-message success" style="display: none;">
-                        <p data-pt="✅ Mensagem enviada com sucesso! Entraremos em contato em breve." data-en="✅ Message sent successfully! We will contact you soon." data-es="✅ ¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.">✅ Mensagem enviada com sucesso! Entraremos em contato em breve.</p>
-                    </div>
-                    
-                    <div id="form-error" class="form-message error" style="display: none;">
-                        <p data-pt="❌ Erro ao enviar mensagem. Tente novamente ou entre em contato por email." data-en="❌ Error sending message. Please try again or contact us by email." data-es="❌ Error al enviar mensaje. Inténtelo de nuevo o contáctenos por email.">❌ Erro ao enviar mensagem. Tente novamente ou entre em contato por email.</p>
-                    </div>
                 </div>
+
             </div>
-            
-            <div class="map-section fade-in">
-                <h2 data-pt="Nosso Atendimento" data-en="Our Service" data-es="Nuestro Servicio">Nosso Atendimento</h2>
-                <div class="map-placeholder">
-                    <p data-pt="🏠 Somos uma agência 100% virtual baseada em São Paulo, oferecendo atendimento online personalizado e reuniões virtuais para maior comodidade e flexibilidade." 
-                       data-en="🏠 We are a 100% virtual agency based in São Paulo, offering personalized online service and virtual meetings for greater convenience and flexibility." 
-                       data-es="🏠 Somos una agencia 100% virtual con base en São Paulo, ofreciendo atención online personalizada y reuniones virtuales para mayor comodidad y flexibilidad.">🏠 Somos uma agência 100% virtual baseada em São Paulo, oferecendo atendimento online personalizado e reuniões virtuais para maior comodidade e flexibilidade.</p>
-                </div>
-            </div>
+
         </div>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p data-pt="© 2024 Lessa-Machado Negócios & Cia. Todos os direitos reservados." 
-                   data-en="© 2024 Lessa-Machado Business & Co. All rights reserved." 
-                   data-es="© 2024 Lessa-Machado Negocios & Cía. Todos los derechos reservados.">© 2024 Lessa-Machado Negócios & Cia. Todos os direitos reservados.</p>
-                
+                <p data-pt="© 2026 Lessa-Machado Negócios & Cia. Todos os direitos reservados."
+                   data-en="© 2026 Lessa-Machado Business & Co. All rights reserved."
+                   data-es="© 2026 Lessa-Machado Negocios & Cía. Todos los derechos reservados.">© 2026 Lessa-Machado Negócios & Cia. Todos os direitos reservados.</p>
                 <div class="social-links">
-                    <a href="https://github.com/guilherme-machado-ceo" target="_blank">GitHub</a>
-                    <a href="https://www.facebook.com/profile.php?id=100090304800262" target="_blank">Facebook</a>
-                    <a href="https://www.youtube.com/@lessamachado_negociosecia" target="_blank">YouTube</a>
+                    <a href="https://github.com/guilherme-machado-ceo" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.facebook.com/profile.php?id=100090304800262" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.youtube.com/@lessamachado_negociosecia" target="_blank" rel="noopener noreferrer">YouTube</a>
+                    <a href="https://www.linkedin.com/in/lessa-machado-neg%C3%B3cios-e-cia/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
             </div>
         </div>
